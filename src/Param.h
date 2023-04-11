@@ -91,6 +91,8 @@ class Param
   double alpha_s;
     
   // [oxygen] --- pde (oxygen)
+  int initial_concentration_function_type;
+  double initial_oxygen;
   double oxygen_response;
   double threshold_hypo;
   /// @brief threshold hypo->death
@@ -185,8 +187,10 @@ class Param
   int cellTracking;
   string fileCellsTracking;
   int writeVtkCells;
+  int write_cells_frequency;
   int writeVtkFibres; 
-  int writeVtkVessels; 
+  int writeVtkVessels;
+  int writeVtkBoxes;
   int getGenealogy;
   int writeCellList;
   string fileCells;
